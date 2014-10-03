@@ -9,15 +9,14 @@ public class Disiciplina {
 	private boolean ativo;
 	
 	//Getters e Setters
-	
-	public String getNome() {
-		return nome;
-	}
-	public long getId() {
+	public int getId() {
 		return id;
 	}
-	public void setId(long id) {
+	public void setId(int id) {
 		this.id = id;
+	}
+	public String getNome() {
+		return nome;
 	}
 	public void setNome(String nome) {
 		this.nome = nome;
