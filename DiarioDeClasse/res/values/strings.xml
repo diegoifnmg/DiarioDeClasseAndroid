@@ -4,5 +4,8 @@
     <string name="app_name">DiarioDeClasse</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
+    <string name="txtNome">Nome da Disciplina:</string>
+    <string name="txtCargaHoraria">Carga Horária:</string>
+    <string name="btnAdicionar">Adicionar</string>
 
 </resources>
