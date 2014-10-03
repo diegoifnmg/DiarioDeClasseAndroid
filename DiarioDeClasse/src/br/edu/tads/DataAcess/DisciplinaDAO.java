@@ -1,4 +1,4 @@
-package Persistencia;
+package br.edu.tads.DataAcess;
 
 
 import android.content.ContentValues;
