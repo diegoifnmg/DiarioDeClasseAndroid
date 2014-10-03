@@ -6,6 +6,7 @@ public class Pessoa {
 	private long id;
 	private String nome;
 	private String email;
+	private boolean ativo;
 	
 	//Getters e Setters
 	public long getId() {
@@ -27,6 +28,12 @@ public class Pessoa {
 		this.email = email;
 	}
 	
+	public boolean isAtivo() {
+		return ativo;
+	}
+	public void setAtivo(boolean ativo) {
+		this.ativo = ativo;
+	}
 	//toString
 	@Override
 	public String toString() {

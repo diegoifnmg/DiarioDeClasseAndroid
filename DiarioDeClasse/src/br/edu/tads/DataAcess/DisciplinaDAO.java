@@ -1,6 +1,7 @@
 package br.edu.tads.DataAcess;
 
 
+import br.edu.tads.Model.Disciplina;
 import android.content.ContentValues;
 import android.content.Context;
 
@@ -19,7 +20,7 @@ private Context context;
 		 
 		 contentValues.put("NOME",disciplina.getNome());
 		 contentValues.put("CARGA_HORARIA",disciplina.getCargaHoraria());
-		 contentValues.put("ATIVO",disciplina.getAtivo());
+		 contentValues.put("ATIVO",disciplina.isAtivo());
 		 
 		 bdUtil.getWritableDatabase().insert("DISCIPLINA", null, contentValues);
 		 
