@@ -1,0 +1,10 @@
+package br.edu.tads.Model;
+
+public class Pessoa {
+	
+	//Variaveis
+	private long id;
+	private String nome;
+	
+
+}
