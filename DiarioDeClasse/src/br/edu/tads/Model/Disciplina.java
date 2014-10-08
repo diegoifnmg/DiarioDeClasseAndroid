@@ -6,7 +6,7 @@ public class Disciplina {
 	private long id;
 	private String nome;
 	private int cargaHoraria;
-	private boolean ativo;
+	private int ativo;
 	private Aluno aluno;
 
 	// Getters e Setters
@@ -34,11 +34,13 @@ public class Disciplina {
 		this.cargaHoraria = cargaHoraria;
 	}
 
-	public boolean isAtivo() {
+	
+
+	public int getAtivo() {
 		return ativo;
 	}
 
-	public void setAtivo(boolean ativo) {
+	public void setAtivo(int ativo) {
 		this.ativo = ativo;
 	}
 
