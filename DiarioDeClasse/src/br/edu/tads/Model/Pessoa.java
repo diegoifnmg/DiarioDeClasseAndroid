@@ -3,20 +3,21 @@ package br.edu.tads.Model;
 public class Pessoa {
 	
 	//Variaveis
-	private long id;
+	private Long id;
 	private String nome;
 	private String email;
-	private boolean ativo;
+	private int ativo;
 	
 	//Getters e Setters
-	public long getId() {
-		return id;
-	}
-	public void setId(long id) {
-		this.id = id;
-	}
+	
 	public String getNome() {
 		return nome;
+	}
+	public Long getId() {
+		return id;
+	}
+	public void setId(Long id) {
+		this.id = id;
 	}
 	public void setNome(String nome) {
 		this.nome = nome;
@@ -28,10 +29,11 @@ public class Pessoa {
 		this.email = email;
 	}
 	
-	public boolean isAtivo() {
+	
+	public int getAtivo() {
 		return ativo;
 	}
-	public void setAtivo(boolean ativo) {
+	public void setAtivo(int ativo) {
 		this.ativo = ativo;
 	}
 	//toString

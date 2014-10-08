@@ -23,9 +23,6 @@ private Context context;
 		 contentValues.put("ATIVO",disciplina.isAtivo());
 		 
 		 bdUtil.getWritableDatabase().insert("DISCIPLINA", null, contentValues);
-		 
-		
-		
 	}
 
 }
