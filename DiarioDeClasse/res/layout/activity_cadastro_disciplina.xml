@@ -53,6 +53,7 @@
         android:layout_alignRight="@+id/edtCargaHoraria"
         android:layout_below="@+id/edtCargaHoraria"
         android:layout_marginTop="20dp"
-        android:text="@string/btnAdicionar" />
+        android:text="@string/btnAdicionar"
+        android:onClick="Adicionar" />
 
 </RelativeLayout>

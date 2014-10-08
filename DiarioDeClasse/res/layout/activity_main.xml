@@ -8,9 +8,24 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".MainActivity" >
 
-    <TextView
+    <Button
+        android:id="@+id/btnCadastroAluno"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
+        android:layout_alignLeft="@+id/btnCadastroDisciplina"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/btnCadastroDisciplina"
+        android:layout_marginTop="27dp"
+        android:text="Cadastro Aluno" />
+
+    <Button
+        android:id="@+id/btnCadastroDisciplina"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:onClick="Disciplinas"
+        android:text="Cadastro Disciplinas" />
 
 </RelativeLayout>

@@ -1,8 +1,15 @@
 package br.edu.tads.diariodeclasse;
 
-import android.os.Bundle;
+
+
 import android.app.Activity;
+import android.os.Bundle;
 import android.view.Menu;
+import android.view.View;
+import android.widget.EditText;
+import android.widget.Toast;
+import br.edu.tads.DataAcess.DisciplinaDAO;
+import br.edu.tads.Model.Disciplina;
 
 public class CadastroDisciplina extends Activity {
 
@@ -18,5 +25,29 @@ public class CadastroDisciplina extends Activity {
 		getMenuInflater().inflate(R.menu.cadastro_disciplina, menu);
 		return true;
 	}
+	 
+	public void Adicionar(View componente){
+		
+		EditText edtNome = (EditText)this.findViewById(R.id.edtNome);
+		EditText edtCargaHoraria = (EditText)this.findViewById(R.id.edtCargaHoraria);
+	    
+		Disciplina disciplina = new Disciplina();
+		DisciplinaDAO dDAO = new DisciplinaDAO(this);
+		
+	    disciplina.setNome(edtNome.getText().toString());
+		disciplina.setCargaHoraria(Integer.parseInt(edtCargaHoraria.getText().toString()));
+		
+		if (disciplina.getNome() != null) {
+			dDAO.Inserir(disciplina);
+
+			// Mostra a mensagem de confirmação do cadastro
+			Toast.makeText(CadastroDisciplina.this,
+					disciplina.getNome() + " Cadastrado com Sucesso",
+					Toast.LENGTH_LONG).show();
+		}
+		
+		
+	}
+	
 
 }
