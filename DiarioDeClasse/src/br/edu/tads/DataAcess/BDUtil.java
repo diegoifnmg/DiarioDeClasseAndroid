@@ -30,9 +30,10 @@ public class BDUtil extends SQLiteOpenHelper {
 				+ "(CODIGO INTEGER PRIMARY KEY AUTOINCREMENT,"
 				+ "nome TEXT, "
 				+ "email TEXT, "
-				+ "ativo INTEGER"
+				+ "ativo INTEGER )";
 
 		db.execSQL(ddlDisciplina);
+		db.execSQL(ddlAluno);
 
 	}
 
