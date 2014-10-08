@@ -26,7 +26,7 @@ public class BDUtil extends SQLiteOpenHelper{
 	public void onCreate(SQLiteDatabase db) {
 		String ddlDisciplina = "CREATE TABLE"+ TABELA_DISCIPLINA +
 				               "(CODIGO INTEGER PRIMARY KEY AUTOINCREMENT," +
-				               "NOME TEXT,CARGA_HORARIA INTEGER, ATIVO TEXT)";
+				               "NOME TEXT,CARGA_HORARIA INTEGER, ATIVO INTEGER)";
 		
 		db.execSQL(ddlDisciplina);
 			
