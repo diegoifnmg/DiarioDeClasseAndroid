@@ -22,18 +22,25 @@ public class BDUtil extends SQLiteOpenHelper {
 	// onCreate...........................................................
 	@Override
 	public void onCreate(SQLiteDatabase db) {
-		String ddlDisciplina = "CREATE TABLE" + TABELA_DISCIPLINA
-				+ "(CODIGO INTEGER PRIMARY KEY AUTOINCREMENT,"
-				+ "NOME TEXT,CARGA_HORARIA INTEGER, ATIVO INTEGER)";
-
+		
 		String ddlAluno = "CREATE TABLE" + TABELA_ALUNO
 				+ "(CODIGO INTEGER PRIMARY KEY AUTOINCREMENT,"
 				+ "nome TEXT, "
 				+ "email TEXT, "
 				+ "ativo INTEGER )";
+		
+		String ddlDisciplina = "CREATE TABLE" + TABELA_DISCIPLINA
+				+ "(CODIGO INTEGER PRIMARY KEY AUTOINCREMENT,"
+				+ "NOME TEXT, "
+				+ "CARGA_HORARIA INTEGER, "
+				+ "ATIVO INTEGER, "
+				+ "CODALUNO INTEGER, "
+				+ "FOREIGN KEY (CODALUNO) REFERENCES ALUNO(CODIGO)"
+				+ ")";
 
-		db.execSQL(ddlDisciplina);
+		
 		db.execSQL(ddlAluno);
+		db.execSQL(ddlDisciplina);
 
 	}
 
