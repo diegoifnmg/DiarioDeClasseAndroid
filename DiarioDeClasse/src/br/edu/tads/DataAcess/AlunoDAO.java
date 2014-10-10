@@ -1,6 +1,5 @@
 package br.edu.tads.DataAcess;
 
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -46,7 +45,7 @@ public class AlunoDAO {
 		BDUtil bdUtil = new BDUtil(context);
 		bdUtil.getWritableDatabase().delete(TABELA, "id=?", args);
 	}
-	
+
 	// Listar todos os alunos..........................................
 	public List<Aluno> listar() {
 
@@ -79,4 +78,34 @@ public class AlunoDAO {
 		}
 		return lista;
 	}
+
+	// Abrir um aluno passando o id como parametro....................
+	public Aluno abrirAluno(Long id) {
+		Aluno aluno = new Aluno();
+
+		// Definição da Instrução SQL
+		String sql = "Select * from Aluno where CODIGO=";
+		sql = sql + id.toString();
+
+		// Objeto que recebe os registros do banco de dados
+		BDUtil bdUtil = new BDUtil(context);
+		Cursor cursor = bdUtil.getReadableDatabase().rawQuery(sql, null);
+		
+		try {
+			while (cursor.moveToNext()) {
+				
+				aluno.setId(cursor.getLong(0));
+				aluno.setNome(cursor.getString(1));
+				aluno.setEmail(cursor.getString(2));
+				aluno.setAtivo(cursor.getInt(3));
+			}
+		} catch (SQLException e) {
+			Log.e(TAG, e.getMessage());
+		} finally {
+			cursor.close();
+		}
+		
+		return aluno;		
+	}
+
 }
