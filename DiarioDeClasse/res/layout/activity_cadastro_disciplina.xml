@@ -50,10 +50,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
-        android:layout_alignRight="@+id/edtCargaHoraria"
+        android:layout_alignParentRight="true"
         android:layout_below="@+id/edtCargaHoraria"
         android:layout_marginTop="20dp"
-        android:text="@string/btnAdicionar"
-        android:onClick="Adicionar" />
+        android:onClick="Adicionar"
+        android:text="@string/btnAdicionar" />
 
 </RelativeLayout>
