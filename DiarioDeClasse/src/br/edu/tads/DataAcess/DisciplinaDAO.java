@@ -25,9 +25,11 @@ public class DisciplinaDAO {
 		BDUtil bdUtil = new BDUtil(this.context);
 		ContentValues contentValues = new ContentValues();
 
-		contentValues.put("NOME", disciplina.getNome());
-		contentValues.put("CARGA_HORARIA", disciplina.getCargaHoraria());
-		contentValues.put("ATIVO", disciplina.getAtivo());
+		contentValues.put("nome", disciplina.getNome());
+		contentValues.put("carga_horaria", disciplina.getCargaHoraria());
+		contentValues.put("ativo", disciplina.getAtivo());
+		contentValues.put("codAluno", 1);
+
 
 		bdUtil.getWritableDatabase().insert("DISCIPLINA", null, contentValues);
 	}
