@@ -7,9 +7,7 @@ public class Disciplina {
 	private String nome;
 	private int cargaHoraria;
 	private int ativo;
-	private Aluno aluno;
-	
-	
+
 	// Construtor
 	public Disciplina() {
 		super();
@@ -41,22 +39,12 @@ public class Disciplina {
 		this.cargaHoraria = cargaHoraria;
 	}
 
-	
-
 	public int getAtivo() {
 		return ativo;
 	}
 
 	public void setAtivo(int ativo) {
 		this.ativo = ativo;
-	}
-
-	public Aluno getAluno() {
-		return aluno;
-	}
-
-	public void setAluno(Aluno aluno) {
-		this.aluno = aluno;
 	}
 
 	// toString

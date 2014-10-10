@@ -354,3 +354,863 @@ user global configuration and to define the default location to store repositori
 not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
 EGit might behave differently since they see different configuration options.
 This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-10-10 15:52:39.860
+!MESSAGE 
+!STACK 0
+java.lang.NullPointerException
+	at com.android.layoutlib.bridge.impl.RenderSessionImpl.getDefaultProperties(RenderSessionImpl.java:1476)
+	at com.android.layoutlib.bridge.BridgeRenderSession.getDefaultProperties(BridgeRenderSession.java:68)
+	at com.android.ide.eclipse.adt.internal.editors.layout.gle2.ViewHierarchy.getDefaultProperties(ViewHierarchy.java:710)
+	at com.android.ide.eclipse.adt.internal.editors.layout.properties.XmlProperty.getStringValue(XmlProperty.java:209)
+	at com.android.ide.eclipse.adt.internal.editors.layout.properties.XmlProperty.getValue(XmlProperty.java:221)
+	at com.android.ide.eclipse.adt.internal.editors.layout.properties.XmlPropertyEditor.getText(XmlPropertyEditor.java:116)
+	at com.android.ide.eclipse.adt.internal.editors.layout.properties.XmlPropertyEditor.paint(XmlPropertyEditor.java:131)
+	at org.eclipse.wb.internal.core.model.property.table.PropertyTable.drawProperty(PropertyTable.java:1309)
+	at org.eclipse.wb.internal.core.model.property.table.PropertyTable.drawContent(PropertyTable.java:1151)
+	at org.eclipse.wb.internal.core.model.property.table.PropertyTable.handlePaint(PropertyTable.java:1094)
+	at org.eclipse.wb.internal.core.model.property.table.PropertyTable.access$200(PropertyTable.java:64)
+	at org.eclipse.wb.internal.core.model.property.table.PropertyTable$3.handleEvent(PropertyTable.java:187)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1053)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1077)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1062)
+	at org.eclipse.swt.widgets.Composite.WM_PAINT(Composite.java:1564)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4585)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:341)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4989)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessageW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(OS.java:2546)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3756)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1053)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:942)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:86)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:588)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:543)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:124)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:353)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:180)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:629)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:584)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1438)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1414)
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-10-10 15:52:39.873
+!MESSAGE 
+!STACK 0
+java.lang.NullPointerException
+	at com.android.layoutlib.bridge.impl.RenderSessionImpl.getDefaultProperties(RenderSessionImpl.java:1476)
+	at com.android.layoutlib.bridge.BridgeRenderSession.getDefaultProperties(BridgeRenderSession.java:68)
+	at com.android.ide.eclipse.adt.internal.editors.layout.gle2.ViewHierarchy.getDefaultProperties(ViewHierarchy.java:710)
+	at com.android.ide.eclipse.adt.internal.editors.layout.properties.XmlProperty.getStringValue(XmlProperty.java:209)
+	at com.android.ide.eclipse.adt.internal.editors.layout.properties.XmlProperty.getValue(XmlProperty.java:221)
+	at com.android.ide.eclipse.adt.internal.editors.layout.properties.XmlPropertyEditor.getText(XmlPropertyEditor.java:116)
+	at com.android.ide.eclipse.adt.internal.editors.layout.properties.XmlPropertyEditor.paint(XmlPropertyEditor.java:131)
+	at org.eclipse.wb.internal.core.model.property.table.PropertyTable.drawProperty(PropertyTable.java:1309)
+	at org.eclipse.wb.internal.core.model.property.table.PropertyTable.drawContent(PropertyTable.java:1151)
+	at org.eclipse.wb.internal.core.model.property.table.PropertyTable.handlePaint(PropertyTable.java:1094)
+	at org.eclipse.wb.internal.core.model.property.table.PropertyTable.access$200(PropertyTable.java:64)
+	at org.eclipse.wb.internal.core.model.property.table.PropertyTable$3.handleEvent(PropertyTable.java:187)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1053)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1077)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1062)
+	at org.eclipse.swt.widgets.Composite.WM_PAINT(Composite.java:1564)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4585)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:341)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4989)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessageW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(OS.java:2546)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3756)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1053)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:942)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:86)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:588)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:543)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:124)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:353)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:180)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:629)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:584)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1438)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1414)
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-10-10 15:52:39.883
+!MESSAGE 
+!STACK 0
+java.lang.NullPointerException
+	at com.android.layoutlib.bridge.impl.RenderSessionImpl.getDefaultProperties(RenderSessionImpl.java:1476)
+	at com.android.layoutlib.bridge.BridgeRenderSession.getDefaultProperties(BridgeRenderSession.java:68)
+	at com.android.ide.eclipse.adt.internal.editors.layout.gle2.ViewHierarchy.getDefaultProperties(ViewHierarchy.java:710)
+	at com.android.ide.eclipse.adt.internal.editors.layout.properties.XmlProperty.getStringValue(XmlProperty.java:209)
+	at com.android.ide.eclipse.adt.internal.editors.layout.properties.XmlProperty.getValue(XmlProperty.java:221)
+	at com.android.ide.eclipse.adt.internal.editors.layout.properties.XmlPropertyEditor.getText(XmlPropertyEditor.java:116)
+	at com.android.ide.eclipse.adt.internal.editors.layout.properties.XmlPropertyEditor.paint(XmlPropertyEditor.java:131)
+	at org.eclipse.wb.internal.core.model.property.table.PropertyTable.drawProperty(PropertyTable.java:1309)
+	at org.eclipse.wb.internal.core.model.property.table.PropertyTable.drawContent(PropertyTable.java:1151)
+	at org.eclipse.wb.internal.core.model.property.table.PropertyTable.handlePaint(PropertyTable.java:1094)
+	at org.eclipse.wb.internal.core.model.property.table.PropertyTable.access$200(PropertyTable.java:64)
+	at org.eclipse.wb.internal.core.model.property.table.PropertyTable$3.handleEvent(PropertyTable.java:187)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1053)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1077)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1062)
+	at org.eclipse.swt.widgets.Composite.WM_PAINT(Composite.java:1564)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4585)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:341)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4989)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessageW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(OS.java:2546)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3756)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1053)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:942)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:86)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:588)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:543)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:124)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:353)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:180)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:629)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:584)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1438)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1414)
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-10-10 15:52:39.884
+!MESSAGE 
+!STACK 0
+java.lang.NullPointerException
+	at com.android.layoutlib.bridge.impl.RenderSessionImpl.getDefaultProperties(RenderSessionImpl.java:1476)
+	at com.android.layoutlib.bridge.BridgeRenderSession.getDefaultProperties(BridgeRenderSession.java:68)
+	at com.android.ide.eclipse.adt.internal.editors.layout.gle2.ViewHierarchy.getDefaultProperties(ViewHierarchy.java:710)
+	at com.android.ide.eclipse.adt.internal.editors.layout.properties.XmlProperty.getStringValue(XmlProperty.java:209)
+	at com.android.ide.eclipse.adt.internal.editors.layout.properties.XmlProperty.getValue(XmlProperty.java:221)
+	at com.android.ide.eclipse.adt.internal.editors.layout.properties.XmlPropertyEditor.getText(XmlPropertyEditor.java:116)
+	at com.android.ide.eclipse.adt.internal.editors.layout.properties.XmlPropertyEditor.paint(XmlPropertyEditor.java:131)
+	at org.eclipse.wb.internal.core.model.property.table.PropertyTable.drawProperty(PropertyTable.java:1309)
+	at org.eclipse.wb.internal.core.model.property.table.PropertyTable.drawContent(PropertyTable.java:1151)
+	at org.eclipse.wb.internal.core.model.property.table.PropertyTable.handlePaint(PropertyTable.java:1094)
+	at org.eclipse.wb.internal.core.model.property.table.PropertyTable.access$200(PropertyTable.java:64)
+	at org.eclipse.wb.internal.core.model.property.table.PropertyTable$3.handleEvent(PropertyTable.java:187)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1053)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1077)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1062)
+	at org.eclipse.swt.widgets.Composite.WM_PAINT(Composite.java:1564)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4585)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:341)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4989)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessageW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(OS.java:2546)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3756)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1053)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:942)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:86)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:588)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:543)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:124)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:353)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:180)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:629)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:584)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1438)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1414)
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-10-10 15:52:39.885
+!MESSAGE 
+!STACK 0
+java.lang.NullPointerException
+	at com.android.layoutlib.bridge.impl.RenderSessionImpl.getDefaultProperties(RenderSessionImpl.java:1476)
+	at com.android.layoutlib.bridge.BridgeRenderSession.getDefaultProperties(BridgeRenderSession.java:68)
+	at com.android.ide.eclipse.adt.internal.editors.layout.gle2.ViewHierarchy.getDefaultProperties(ViewHierarchy.java:710)
+	at com.android.ide.eclipse.adt.internal.editors.layout.properties.XmlProperty.getStringValue(XmlProperty.java:209)
+	at com.android.ide.eclipse.adt.internal.editors.layout.properties.XmlProperty.getValue(XmlProperty.java:221)
+	at com.android.ide.eclipse.adt.internal.editors.layout.properties.XmlPropertyEditor.getText(XmlPropertyEditor.java:116)
+	at com.android.ide.eclipse.adt.internal.editors.layout.properties.XmlPropertyEditor.paint(XmlPropertyEditor.java:131)
+	at org.eclipse.wb.internal.core.model.property.table.PropertyTable.drawProperty(PropertyTable.java:1309)
+	at org.eclipse.wb.internal.core.model.property.table.PropertyTable.drawContent(PropertyTable.java:1151)
+	at org.eclipse.wb.internal.core.model.property.table.PropertyTable.handlePaint(PropertyTable.java:1094)
+	at org.eclipse.wb.internal.core.model.property.table.PropertyTable.access$200(PropertyTable.java:64)
+	at org.eclipse.wb.internal.core.model.property.table.PropertyTable$3.handleEvent(PropertyTable.java:187)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1053)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1077)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1062)
+	at org.eclipse.swt.widgets.Composite.WM_PAINT(Composite.java:1564)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4585)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:341)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4989)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessageW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(OS.java:2546)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3756)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1053)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:942)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:86)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:588)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:543)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:124)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:353)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:180)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:629)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:584)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1438)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1414)
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-10-10 15:52:39.886
+!MESSAGE 
+!STACK 0
+java.lang.NullPointerException
+	at com.android.layoutlib.bridge.impl.RenderSessionImpl.getDefaultProperties(RenderSessionImpl.java:1476)
+	at com.android.layoutlib.bridge.BridgeRenderSession.getDefaultProperties(BridgeRenderSession.java:68)
+	at com.android.ide.eclipse.adt.internal.editors.layout.gle2.ViewHierarchy.getDefaultProperties(ViewHierarchy.java:710)
+	at com.android.ide.eclipse.adt.internal.editors.layout.properties.XmlProperty.getStringValue(XmlProperty.java:209)
+	at com.android.ide.eclipse.adt.internal.editors.layout.properties.XmlProperty.getValue(XmlProperty.java:221)
+	at com.android.ide.eclipse.adt.internal.editors.layout.properties.XmlPropertyEditor.getText(XmlPropertyEditor.java:116)
+	at com.android.ide.eclipse.adt.internal.editors.layout.properties.XmlPropertyEditor.paint(XmlPropertyEditor.java:131)
+	at org.eclipse.wb.internal.core.model.property.table.PropertyTable.drawProperty(PropertyTable.java:1309)
+	at org.eclipse.wb.internal.core.model.property.table.PropertyTable.drawContent(PropertyTable.java:1151)
+	at org.eclipse.wb.internal.core.model.property.table.PropertyTable.handlePaint(PropertyTable.java:1094)
+	at org.eclipse.wb.internal.core.model.property.table.PropertyTable.access$200(PropertyTable.java:64)
+	at org.eclipse.wb.internal.core.model.property.table.PropertyTable$3.handleEvent(PropertyTable.java:187)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1053)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1077)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1062)
+	at org.eclipse.swt.widgets.Composite.WM_PAINT(Composite.java:1564)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4585)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:341)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4989)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessageW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(OS.java:2546)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3756)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1053)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:942)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:86)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:588)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:543)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:124)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:353)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:180)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:629)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:584)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1438)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1414)
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-10-10 15:52:39.887
+!MESSAGE 
+!STACK 0
+java.lang.NullPointerException
+	at com.android.layoutlib.bridge.impl.RenderSessionImpl.getDefaultProperties(RenderSessionImpl.java:1476)
+	at com.android.layoutlib.bridge.BridgeRenderSession.getDefaultProperties(BridgeRenderSession.java:68)
+	at com.android.ide.eclipse.adt.internal.editors.layout.gle2.ViewHierarchy.getDefaultProperties(ViewHierarchy.java:710)
+	at com.android.ide.eclipse.adt.internal.editors.layout.properties.XmlProperty.getStringValue(XmlProperty.java:209)
+	at com.android.ide.eclipse.adt.internal.editors.layout.properties.XmlProperty.getValue(XmlProperty.java:221)
+	at com.android.ide.eclipse.adt.internal.editors.layout.properties.XmlPropertyEditor.getText(XmlPropertyEditor.java:116)
+	at com.android.ide.eclipse.adt.internal.editors.layout.properties.XmlPropertyEditor.paint(XmlPropertyEditor.java:131)
+	at org.eclipse.wb.internal.core.model.property.table.PropertyTable.drawProperty(PropertyTable.java:1309)
+	at org.eclipse.wb.internal.core.model.property.table.PropertyTable.drawContent(PropertyTable.java:1151)
+	at org.eclipse.wb.internal.core.model.property.table.PropertyTable.handlePaint(PropertyTable.java:1094)
+	at org.eclipse.wb.internal.core.model.property.table.PropertyTable.access$200(PropertyTable.java:64)
+	at org.eclipse.wb.internal.core.model.property.table.PropertyTable$3.handleEvent(PropertyTable.java:187)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1053)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1077)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1062)
+	at org.eclipse.swt.widgets.Composite.WM_PAINT(Composite.java:1564)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4585)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:341)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4989)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessageW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(OS.java:2546)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3756)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1053)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:942)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:86)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:588)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:543)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:124)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:353)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:180)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:629)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:584)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1438)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1414)
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-10-10 15:52:39.888
+!MESSAGE 
+!STACK 0
+java.lang.NullPointerException
+	at com.android.layoutlib.bridge.impl.RenderSessionImpl.getDefaultProperties(RenderSessionImpl.java:1476)
+	at com.android.layoutlib.bridge.BridgeRenderSession.getDefaultProperties(BridgeRenderSession.java:68)
+	at com.android.ide.eclipse.adt.internal.editors.layout.gle2.ViewHierarchy.getDefaultProperties(ViewHierarchy.java:710)
+	at com.android.ide.eclipse.adt.internal.editors.layout.properties.XmlProperty.getStringValue(XmlProperty.java:209)
+	at com.android.ide.eclipse.adt.internal.editors.layout.properties.XmlProperty.getValue(XmlProperty.java:221)
+	at com.android.ide.eclipse.adt.internal.editors.layout.properties.XmlPropertyEditor.getText(XmlPropertyEditor.java:116)
+	at com.android.ide.eclipse.adt.internal.editors.layout.properties.XmlPropertyEditor.paint(XmlPropertyEditor.java:131)
+	at org.eclipse.wb.internal.core.model.property.table.PropertyTable.drawProperty(PropertyTable.java:1309)
+	at org.eclipse.wb.internal.core.model.property.table.PropertyTable.drawContent(PropertyTable.java:1151)
+	at org.eclipse.wb.internal.core.model.property.table.PropertyTable.handlePaint(PropertyTable.java:1094)
+	at org.eclipse.wb.internal.core.model.property.table.PropertyTable.access$200(PropertyTable.java:64)
+	at org.eclipse.wb.internal.core.model.property.table.PropertyTable$3.handleEvent(PropertyTable.java:187)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1053)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1077)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1062)
+	at org.eclipse.swt.widgets.Composite.WM_PAINT(Composite.java:1564)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4585)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:341)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4989)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessageW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(OS.java:2546)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3756)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1053)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:942)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:86)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:588)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:543)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:124)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:353)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:180)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:629)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:584)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1438)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1414)
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-10-10 15:52:39.888
+!MESSAGE 
+!STACK 0
+java.lang.NullPointerException
+	at com.android.layoutlib.bridge.impl.RenderSessionImpl.getDefaultProperties(RenderSessionImpl.java:1476)
+	at com.android.layoutlib.bridge.BridgeRenderSession.getDefaultProperties(BridgeRenderSession.java:68)
+	at com.android.ide.eclipse.adt.internal.editors.layout.gle2.ViewHierarchy.getDefaultProperties(ViewHierarchy.java:710)
+	at com.android.ide.eclipse.adt.internal.editors.layout.properties.XmlProperty.getStringValue(XmlProperty.java:209)
+	at com.android.ide.eclipse.adt.internal.editors.layout.properties.XmlProperty.getValue(XmlProperty.java:221)
+	at com.android.ide.eclipse.adt.internal.editors.layout.properties.XmlPropertyEditor.getText(XmlPropertyEditor.java:116)
+	at com.android.ide.eclipse.adt.internal.editors.layout.properties.XmlPropertyEditor.paint(XmlPropertyEditor.java:131)
+	at org.eclipse.wb.internal.core.model.property.table.PropertyTable.drawProperty(PropertyTable.java:1309)
+	at org.eclipse.wb.internal.core.model.property.table.PropertyTable.drawContent(PropertyTable.java:1151)
+	at org.eclipse.wb.internal.core.model.property.table.PropertyTable.handlePaint(PropertyTable.java:1094)
+	at org.eclipse.wb.internal.core.model.property.table.PropertyTable.access$200(PropertyTable.java:64)
+	at org.eclipse.wb.internal.core.model.property.table.PropertyTable$3.handleEvent(PropertyTable.java:187)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1053)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1077)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1062)
+	at org.eclipse.swt.widgets.Composite.WM_PAINT(Composite.java:1564)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4585)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:341)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4989)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessageW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(OS.java:2546)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3756)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1053)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:942)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:86)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:588)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:543)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:124)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:353)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:180)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:629)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:584)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1438)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1414)
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-10-10 15:52:39.889
+!MESSAGE 
+!STACK 0
+java.lang.NullPointerException
+	at com.android.layoutlib.bridge.impl.RenderSessionImpl.getDefaultProperties(RenderSessionImpl.java:1476)
+	at com.android.layoutlib.bridge.BridgeRenderSession.getDefaultProperties(BridgeRenderSession.java:68)
+	at com.android.ide.eclipse.adt.internal.editors.layout.gle2.ViewHierarchy.getDefaultProperties(ViewHierarchy.java:710)
+	at com.android.ide.eclipse.adt.internal.editors.layout.properties.XmlProperty.getStringValue(XmlProperty.java:209)
+	at com.android.ide.eclipse.adt.internal.editors.layout.properties.XmlProperty.getValue(XmlProperty.java:221)
+	at com.android.ide.eclipse.adt.internal.editors.layout.properties.XmlPropertyEditor.getText(XmlPropertyEditor.java:116)
+	at com.android.ide.eclipse.adt.internal.editors.layout.properties.XmlPropertyEditor.paint(XmlPropertyEditor.java:131)
+	at org.eclipse.wb.internal.core.model.property.table.PropertyTable.drawProperty(PropertyTable.java:1309)
+	at org.eclipse.wb.internal.core.model.property.table.PropertyTable.drawContent(PropertyTable.java:1151)
+	at org.eclipse.wb.internal.core.model.property.table.PropertyTable.handlePaint(PropertyTable.java:1094)
+	at org.eclipse.wb.internal.core.model.property.table.PropertyTable.access$200(PropertyTable.java:64)
+	at org.eclipse.wb.internal.core.model.property.table.PropertyTable$3.handleEvent(PropertyTable.java:187)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1053)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1077)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1062)
+	at org.eclipse.swt.widgets.Composite.WM_PAINT(Composite.java:1564)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4585)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:341)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4989)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessageW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(OS.java:2546)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3756)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1053)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:942)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:86)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:588)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:543)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:124)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:353)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:180)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:629)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:584)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1438)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1414)
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-10-10 15:52:39.890
+!MESSAGE 
+!STACK 0
+java.lang.NullPointerException
+	at com.android.layoutlib.bridge.impl.RenderSessionImpl.getDefaultProperties(RenderSessionImpl.java:1476)
+	at com.android.layoutlib.bridge.BridgeRenderSession.getDefaultProperties(BridgeRenderSession.java:68)
+	at com.android.ide.eclipse.adt.internal.editors.layout.gle2.ViewHierarchy.getDefaultProperties(ViewHierarchy.java:710)
+	at com.android.ide.eclipse.adt.internal.editors.layout.properties.XmlProperty.getStringValue(XmlProperty.java:209)
+	at com.android.ide.eclipse.adt.internal.editors.layout.properties.XmlProperty.getValue(XmlProperty.java:221)
+	at com.android.ide.eclipse.adt.internal.editors.layout.properties.XmlPropertyEditor.getText(XmlPropertyEditor.java:116)
+	at com.android.ide.eclipse.adt.internal.editors.layout.properties.XmlPropertyEditor.paint(XmlPropertyEditor.java:131)
+	at org.eclipse.wb.internal.core.model.property.table.PropertyTable.drawProperty(PropertyTable.java:1309)
+	at org.eclipse.wb.internal.core.model.property.table.PropertyTable.drawContent(PropertyTable.java:1151)
+	at org.eclipse.wb.internal.core.model.property.table.PropertyTable.handlePaint(PropertyTable.java:1094)
+	at org.eclipse.wb.internal.core.model.property.table.PropertyTable.access$200(PropertyTable.java:64)
+	at org.eclipse.wb.internal.core.model.property.table.PropertyTable$3.handleEvent(PropertyTable.java:187)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1053)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1077)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1062)
+	at org.eclipse.swt.widgets.Composite.WM_PAINT(Composite.java:1564)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4585)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:341)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4989)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessageW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(OS.java:2546)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3756)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1053)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:942)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:86)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:588)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:543)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:124)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:353)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:180)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:629)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:584)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1438)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1414)
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-10-10 15:52:39.890
+!MESSAGE 
+!STACK 0
+java.lang.NullPointerException
+	at com.android.layoutlib.bridge.impl.RenderSessionImpl.getDefaultProperties(RenderSessionImpl.java:1476)
+	at com.android.layoutlib.bridge.BridgeRenderSession.getDefaultProperties(BridgeRenderSession.java:68)
+	at com.android.ide.eclipse.adt.internal.editors.layout.gle2.ViewHierarchy.getDefaultProperties(ViewHierarchy.java:710)
+	at com.android.ide.eclipse.adt.internal.editors.layout.properties.XmlProperty.getStringValue(XmlProperty.java:209)
+	at com.android.ide.eclipse.adt.internal.editors.layout.properties.XmlProperty.getValue(XmlProperty.java:221)
+	at com.android.ide.eclipse.adt.internal.editors.layout.properties.XmlPropertyEditor.getText(XmlPropertyEditor.java:116)
+	at com.android.ide.eclipse.adt.internal.editors.layout.properties.XmlPropertyEditor.paint(XmlPropertyEditor.java:131)
+	at org.eclipse.wb.internal.core.model.property.table.PropertyTable.drawProperty(PropertyTable.java:1309)
+	at org.eclipse.wb.internal.core.model.property.table.PropertyTable.drawContent(PropertyTable.java:1151)
+	at org.eclipse.wb.internal.core.model.property.table.PropertyTable.handlePaint(PropertyTable.java:1094)
+	at org.eclipse.wb.internal.core.model.property.table.PropertyTable.access$200(PropertyTable.java:64)
+	at org.eclipse.wb.internal.core.model.property.table.PropertyTable$3.handleEvent(PropertyTable.java:187)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1053)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1077)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1062)
+	at org.eclipse.swt.widgets.Composite.WM_PAINT(Composite.java:1564)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4585)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:341)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4989)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessageW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(OS.java:2546)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3756)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1053)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:942)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:86)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:588)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:543)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:124)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:353)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:180)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:629)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:584)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1438)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1414)
+
+!ENTRY org.eclipse.jface 2 0 2014-10-10 15:52:43.823
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-10-10 15:52:43.823
+!MESSAGE A conflict occurred for CTRL+I:
+Binding(CTRL+I,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.indent,Correct Indentation,
+		Corrects the indentation of the selected lines,
+		Category(org.eclipse.jdt.ui.category.source,Source,Java Source Actions,true),
+		org.eclipse.ui.internal.MakeHandlersGo@52f2af7c,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(CTRL+I,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.format.active.elements,Format Active Elements,
+		Format active elements,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@3eddb172,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-10-10 15:52:43.823
+!MESSAGE A conflict occurred for CTRL+SHIFT+F:
+Binding(CTRL+SHIFT+F,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.format,Format,
+		Format the selected text,
+		Category(org.eclipse.jdt.ui.category.source,Source,Java Source Actions,true),
+		org.eclipse.ui.internal.MakeHandlersGo@3a5dce3e,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(CTRL+SHIFT+F,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.format.document,Format,
+		Format selection,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@15b2a283,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-10-10 15:52:43.823
+!MESSAGE A conflict occurred for CTRL+SHIFT+ARROW_DOWN:
+Binding(CTRL+SHIFT+ARROW_DOWN,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.goto.next.member,Go to Next Member,
+		Move the caret to the next member of the compilation unit,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@3adf206f,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(CTRL+SHIFT+ARROW_DOWN,
+	ParameterizedCommand(Command(org.eclipse.wst.xml.ui.nextSibling,Next Sibling,
+		Go to Next Sibling,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@2190762,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-10-10 15:52:43.823
+!MESSAGE A conflict occurred for ALT+SHIFT+ARROW_LEFT:
+Binding(ALT+SHIFT+ARROW_LEFT,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.select.previous,Select Previous Element,
+		Expand selection to include previous sibling,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@eca759b,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(ALT+SHIFT+ARROW_LEFT,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.structure.select.previous,Select Previous Element,
+		Expand selection to include previous sibling,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@5a523838,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-10-10 15:52:43.823
+!MESSAGE A conflict occurred for ALT+SHIFT+ARROW_UP:
+Binding(ALT+SHIFT+ARROW_UP,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.select.enclosing,Select Enclosing Element,
+		Expand selection to include enclosing element,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@def1ab3,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(ALT+SHIFT+ARROW_UP,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.structure.select.enclosing,Select Enclosing Element,
+		Expand selection to include enclosing element,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@a5eab2,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-10-10 15:52:43.823
+!MESSAGE A conflict occurred for CTRL+SHIFT+P:
+Binding(CTRL+SHIFT+P,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.goto.matching.bracket,Go to Matching Bracket,
+		Moves the cursor to the matching bracket,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@4cc1e4ea,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(CTRL+SHIFT+P,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.goto.matching.bracket,Matching Bracket,
+		Go to Matching Bracket,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@5168bef9,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-10-10 15:52:43.823
+!MESSAGE A conflict occurred for CTRL+SHIFT+/:
+Binding(CTRL+SHIFT+/,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.add.block.comment,Add Block Comment,
+		Enclose the selection with a block comment,
+		Category(org.eclipse.jdt.ui.category.source,Source,Java Source Actions,true),
+		org.eclipse.ui.internal.MakeHandlersGo@4d9be604,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(CTRL+SHIFT+/,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.add.block.comment,Add Block Comment,
+		Add Block Comment,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@29c674b,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-10-10 15:52:43.823
+!MESSAGE A conflict occurred for CTRL+O:
+Binding(CTRL+O,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.show.outline,Quick Outline,
+		Show the quick outline for the editor input,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@361a386a,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(CTRL+O,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.quick_outline,Quick Outline,
+		Show the quick outline for the editor input,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@736dd2e5,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-10-10 15:52:43.823
+!MESSAGE A conflict occurred for CTRL+SHIFT+ARROW_UP:
+Binding(CTRL+SHIFT+ARROW_UP,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.goto.previous.member,Go to Previous Member,
+		Move the caret to the previous member of the compilation unit,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@2f30f397,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(CTRL+SHIFT+ARROW_UP,
+	ParameterizedCommand(Command(org.eclipse.wst.xml.ui.previousSibling,Previous Sibling,
+		Go to Previous Sibling,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@7e2e5722,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-10-10 15:52:43.823
+!MESSAGE A conflict occurred for ALT+SHIFT+ARROW_DOWN:
+Binding(ALT+SHIFT+ARROW_DOWN,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.select.last,Restore Last Selection,
+		Restore last selection,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@36c856b5,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(ALT+SHIFT+ARROW_DOWN,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.structure.select.last,Restore Last Selection,
+		Restore last selection,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@58f69b7b,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-10-10 15:52:43.823
+!MESSAGE A conflict occurred for CTRL+SHIFT+C:
+Binding(CTRL+SHIFT+C,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.toggle.comment,Toggle Comment,
+		Toggle comment the selected lines,
+		Category(org.eclipse.jdt.ui.category.source,Source,Java Source Actions,true),
+		org.eclipse.ui.internal.MakeHandlersGo@1ab4a12c,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(CTRL+SHIFT+C,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.toggle.comment,Toggle Comment,
+		Toggle Comment,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@139de0e6,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-10-10 15:52:43.823
+!MESSAGE A conflict occurred for ALT+SHIFT+ARROW_RIGHT:
+Binding(ALT+SHIFT+ARROW_RIGHT,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.select.next,Select Next Element,
+		Expand selection to include next sibling,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@48c15d66,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(ALT+SHIFT+ARROW_RIGHT,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.structure.select.next,Select Next Element,
+		Expand selection to include next sibling,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@3789c12e,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-10-10 15:52:43.823
+!MESSAGE A conflict occurred for CTRL+SHIFT+\:
+Binding(CTRL+SHIFT+\,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.remove.block.comment,Remove Block Comment,
+		Remove the block comment enclosing the selection,
+		Category(org.eclipse.jdt.ui.category.source,Source,Java Source Actions,true),
+		org.eclipse.ui.internal.MakeHandlersGo@edaf8db,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(CTRL+SHIFT+\,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.remove.block.comment,Remove Block Comment,
+		Remove Block Comment,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@30ace0d5,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-10-10 16:06:17.850
+!MESSAGE No command output when running: 'am start -n br.edu.tads.diariodeclasse/br.edu.tads.diariodeclasse.MainActivity -a android.intent.action.MAIN -c android.intent.category.LAUNCHER' on device emulator-5554
+!STACK 0
+com.android.ddmlib.ShellCommandUnresponsiveException
+	at com.android.ddmlib.AdbHelper.executeRemoteCommand(AdbHelper.java:430)
+	at com.android.ddmlib.AdbHelper.executeRemoteCommand(AdbHelper.java:347)
+	at com.android.ddmlib.Device.executeShellCommand(Device.java:435)
+	at com.android.ide.eclipse.adt.internal.launch.ActivityLaunchAction.doLaunchAction(ActivityLaunchAction.java:67)
+	at com.android.ide.eclipse.adt.internal.launch.ActivityLaunchAction.doLaunchAction(ActivityLaunchAction.java:109)
+	at com.android.ide.eclipse.adt.internal.launch.AndroidLaunchController.doLaunchAction(AndroidLaunchController.java:1286)
+	at com.android.ide.eclipse.adt.internal.launch.AndroidLaunchController.doLaunchAction(AndroidLaunchController.java:1298)
+	at com.android.ide.eclipse.adt.internal.launch.AndroidLaunchController.launchApp(AndroidLaunchController.java:1270)
+	at com.android.ide.eclipse.adt.internal.launch.AndroidLaunchController.simpleLaunch(AndroidLaunchController.java:906)
+	at com.android.ide.eclipse.adt.internal.launch.AndroidLaunchController.continueLaunch(AndroidLaunchController.java:748)
+	at com.android.ide.eclipse.adt.internal.launch.AndroidLaunchController.launch(AndroidLaunchController.java:570)
+	at com.android.ide.eclipse.adt.internal.launch.LaunchConfigDelegate.doLaunch(LaunchConfigDelegate.java:322)
+	at com.android.ide.eclipse.adt.internal.launch.LaunchConfigDelegate.launch(LaunchConfigDelegate.java:238)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:855)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:704)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1047)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1251)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
