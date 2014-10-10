@@ -7,5 +7,6 @@
     <string name="txtNome">Nome da Disciplina:</string>
     <string name="txtCargaHoraria">Carga Horária:</string>
     <string name="btnAdicionar">Adicionar</string>
+    <string name="title_activity_listagem_disciplina">Listagem de Disciplinas</string>
 
 </resources>
