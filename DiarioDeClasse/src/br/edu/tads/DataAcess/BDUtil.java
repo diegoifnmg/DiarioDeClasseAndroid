@@ -33,9 +33,7 @@ public class BDUtil extends SQLiteOpenHelper {
 				+ "(CODIGO INTEGER PRIMARY KEY AUTOINCREMENT,"
 				+ "nome TEXT, "
 				+ "carga_horaria INTEGER, "
-				+ "ativo INTEGER, "
-				+ "codAluno INTEGER, "
-				+ "foreign key (codAluno) references Aluno(Codigo)"
+				+ "ativo INTEGER "
 				+ ")";
 
 		
