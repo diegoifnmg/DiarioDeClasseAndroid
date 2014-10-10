@@ -27,13 +27,12 @@
             android:label="@string/app_name" >
         </activity>
         <activity
-<<<<<<< HEAD
             android:name="br.edu.tads.diariodeclasse.ListagemDisciplina"
             android:label="@string/title_activity_listagem_disciplina" >
-=======
+        </activity>   
+		<activity
             android:name="br.edu.tads.diariodeclasse.AdicionarAluno"
             android:label="@string/title_activity_adicionar_aluno" >
->>>>>>> 233be8667bda407485ad42073c44feec4385f8d2
         </activity>
     </application>
 

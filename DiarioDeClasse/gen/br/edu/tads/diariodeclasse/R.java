@@ -7,8 +7,6 @@
 
 package br.edu.tads.diariodeclasse;
 
-import android.view.View;
-
 public final class R {
     public static final class attr {
     }
@@ -38,7 +36,6 @@ public final class R {
     }
     public static final class layout {
         public static final int activity_cadastro_disciplina=0x7f030000;
-<<<<<<< HEAD
         public static final int activity_listagem_disciplina=0x7f030001;
         public static final int activity_main=0x7f030002;
     }
@@ -46,21 +43,13 @@ public final class R {
         public static final int cadastro_disciplina=0x7f070000;
         public static final int listagem_disciplina=0x7f070001;
         public static final int main=0x7f070002;
-=======
-        public static final int activity_main=0x7f030001;
-		public static final View activity_adicionar_aluno = null;
-    }
-    public static final class menu {
-        public static final int cadastro_disciplina=0x7f070000;
-        public static final int main=0x7f070001;
-		public static final int adicionar_aluno = 0;
->>>>>>> 233be8667bda407485ad42073c44feec4385f8d2
     }
     public static final class string {
         public static final int action_settings=0x7f050001;
         public static final int app_name=0x7f050000;
         public static final int btnAdicionar=0x7f050005;
         public static final int hello_world=0x7f050002;
+        public static final int title_activity_adicionar_aluno=0x7f050007;
         public static final int title_activity_listagem_disciplina=0x7f050006;
         public static final int txtCargaHoraria=0x7f050004;
         public static final int txtNome=0x7f050003;
