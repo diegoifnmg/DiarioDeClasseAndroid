@@ -13,27 +13,27 @@ import br.edu.tads.Model.Disciplina;
 public class DisciplinaDAO {
 	private Context context;
 	private static final String TABELA = "Disciplina";
-	private static final String TAG = "CADASTRO_DISCIPLINA";
+	private static final String TAG = "DISCIPLINA_DAO";
 
-	// Construtor.................................................
+	// Construtor................................................................
 	public DisciplinaDAO(Context context) {
 		this.context = context;
 	}
 
-	// Método Cadastrar...........................................
-	public void Inserir(Disciplina disciplina) {
-		BDUtil bdUtil = new BDUtil(this.context);
+	// Método Cadastrar..........................................................
+	public void inserir(Disciplina disciplina) {
+		
 		ContentValues contentValues = new ContentValues();
 
 		contentValues.put("nome", disciplina.getNome());
 		contentValues.put("carga_horaria", disciplina.getCargaHoraria());
 		contentValues.put("ativo", disciplina.getAtivo());
 
-
+		BDUtil bdUtil = new BDUtil(this.context);
 		bdUtil.getWritableDatabase().insert("DISCIPLINA", null, contentValues);
 	}
 
-	// Método Apagar..............................................
+	// Método Apagar............................................................
 	public void deletar(Disciplina disciplina) {
 		String[] args = { disciplina.getId().toString() };
 
@@ -42,7 +42,7 @@ public class DisciplinaDAO {
 		bdUtil.getWritableDatabase().delete(TABELA, "id=?", args);
 	}
 
-	// Listar todos os alunos.....................................
+	// Listar todos os alunos...................................................
 	public List<Disciplina> listar() {
 
 		// Definição da Coleção de Disciplinas

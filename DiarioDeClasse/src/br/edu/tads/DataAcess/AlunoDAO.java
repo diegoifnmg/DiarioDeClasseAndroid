@@ -21,7 +21,7 @@ public class AlunoDAO {
 		this.context = context;
 	}
 
-	// Cadastrar aluno................................................
+	// Cadastrar aluno.........................................................
 	public void inserir(Aluno aluno) {
 		// Objeto para armazenar os valores dos campos
 		ContentValues values = new ContentValues();
@@ -36,7 +36,7 @@ public class AlunoDAO {
 		bdUtil.getWritableDatabase().insert(TABELA, null, values);
 	}
 
-	// Deletar Aluno...................................................
+	// Deletar Aluno..........................................................
 	public void deletar(Aluno aluno) {
 		// Definição do Array de Parametros
 		String[] args = { aluno.getId().toString() };
@@ -46,10 +46,10 @@ public class AlunoDAO {
 		bdUtil.getWritableDatabase().delete(TABELA, "id=?", args);
 	}
 
-	// Listar todos os alunos..........................................
+	// Listar todos os alunos.................................................
 	public List<Aluno> listar() {
 
-		// Definição da Coleção de Projetos
+		// Definição da Coleção de Alunos
 		List<Aluno> lista = new ArrayList<Aluno>();
 
 		// Definição da Instrução SQL
@@ -79,20 +79,19 @@ public class AlunoDAO {
 		return lista;
 	}
 
-	// Abrir um aluno passando o id como parametro....................
+	// Abrir um aluno passando o id como parametro................................
 	public Aluno abrirAluno(Long id) {
 		Aluno aluno = new Aluno();
 
 		// Definição da Instrução SQL
-		String sql = "Select * from Aluno where CODIGO=";
-		sql = sql + id.toString();
+		String sql = "Select * from Aluno where codigo=" + id;
 
 		// Objeto que recebe os registros do banco de dados
 		BDUtil bdUtil = new BDUtil(context);
 		Cursor cursor = bdUtil.getReadableDatabase().rawQuery(sql, null);
 		
 		try {
-			while (cursor.moveToNext()) {
+			if (cursor.moveToFirst()) {
 				
 				aluno.setId(cursor.getLong(0));
 				aluno.setNome(cursor.getString(1));

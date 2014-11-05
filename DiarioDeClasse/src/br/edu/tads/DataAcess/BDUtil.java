@@ -30,7 +30,7 @@ public class BDUtil extends SQLiteOpenHelper {
 				+ "ativo INTEGER )";
 		
 		String ddlDisciplina = "CREATE TABLE " + TABELA_DISCIPLINA
-				+ "(CODIGO INTEGER PRIMARY KEY AUTOINCREMENT,"
+				+ "(codigo INTEGER PRIMARY KEY AUTOINCREMENT, "
 				+ "nome TEXT, "
 				+ "carga_horaria INTEGER, "
 				+ "ativo INTEGER "
