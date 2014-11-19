@@ -36,4 +36,10 @@ public class MainActivity extends Activity {
    	
     }
     
+public void Alunos(View componente){
+    	
+    	Intent intentNovaTela = new Intent(MainActivity.this, AdicionarAluno.class);
+    	MainActivity.this.startActivity(intentNovaTela);
+    }
+    
 }

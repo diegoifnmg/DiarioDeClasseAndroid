@@ -16,7 +16,8 @@
         android:layout_alignParentRight="true"
         android:layout_below="@+id/btnCadastroDisciplina"
         android:layout_marginTop="27dp"
-        android:text="Cadastro Aluno" />
+        android:text="Cadastro Aluno"
+        android:onClick="Aluno" />
 
     <Button
         android:id="@+id/btnCadastroDisciplina"
