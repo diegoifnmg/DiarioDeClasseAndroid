@@ -10,10 +10,16 @@ import android.widget.Toast;
 
 public class AdicionarAluno extends Activity {
 
+	
+	
+	private static Long ID_DISCIPLINA = (long) 0;
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_adicionar_aluno);
+		
+		ID_DISCIPLINA = this.getIntent().getExtras().getLong("idDisciplina");
 	}
 
 	@Override
@@ -25,20 +31,10 @@ public class AdicionarAluno extends Activity {
 	
 	public void Adicionar(View componente){
 		
-		Intent intentNovaTela = new Intent(AdicionarAluno.this, MainActivity.class);
-		
-		
-		
-		
-		
-		
-		
-		
+		Intent intentNovaTela = new Intent(AdicionarAluno.this, MainActivity.class);			
 		
 		Toast.makeText(AdicionarAluno.this,
 				" Cadastrado com Sucesso",Toast.LENGTH_LONG).show();
-		
-		
 		
     	
     	AdicionarAluno.this.startActivity(intentNovaTela);

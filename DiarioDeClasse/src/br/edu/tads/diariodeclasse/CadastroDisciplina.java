@@ -14,6 +14,8 @@ import br.edu.tads.Model.Disciplina;
 
 public class CadastroDisciplina extends Activity {
 
+	
+	private static Long ID_DISCIPLINA = (long) 0;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -52,24 +54,13 @@ public class CadastroDisciplina extends Activity {
 		
 	}
 
-	public void addAluno(View componente){
-		
-		EditText edtNome = (EditText)this.findViewById(R.id.edtNome);
-		EditText edtCargaH = (EditText)this.findViewById(R.id.edtCargaHoraria);
-		
-		
-		
-		
+	public void addAluno(View componente){		
 		Intent intentNovaTela = new Intent(this, AdicionarAluno.class);
-		//intentNovaTela.putExtra("id", dis);
-		intentNovaTela.putExtra("Nome", edtNome.getText().toString() );
-		intentNovaTela.putExtra("CargaH",edtCargaH.getText().toString());
+		EditText edtNome = (EditText)this.findViewById(R.id.edtNome);
+		DisciplinaDAO dao = new DisciplinaDAO(this);		
 		
-	
-	
-	}
-
-	
-	
-	
+		ID_DISCIPLINA = dao.retornarID(edtNome.getText().toString());
+		intentNovaTela.putExtra("idDisciplina", ID_DISCIPLINA);
+		CadastroDisciplina.this.startActivity(intentNovaTela);
+	}	
 }

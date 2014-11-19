@@ -89,5 +89,21 @@ public class DisciplinaDAO {
 		}
 		return lista;
 	}
+	
+	//Abre uma Disciplina com base no NOme
+	public Long retornarID(String nome){
+		Long idDisciplina = (long) 0;
+		String sql = "Select codigo from Disciplina where nome like " + nome;
+		
+		BDUtil bdUtil = new BDUtil(context);
+		Cursor cursor = bdUtil.getReadableDatabase().rawQuery(sql, null);
+		
+		if(cursor.moveToFirst()){
+			idDisciplina = cursor.getLong(0);
+		}
+		
+		return idDisciplina;
+		
+	}
 
 }
