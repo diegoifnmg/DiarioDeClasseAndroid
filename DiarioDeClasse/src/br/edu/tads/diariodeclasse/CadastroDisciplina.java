@@ -2,7 +2,11 @@ package br.edu.tads.diariodeclasse;
 
 
 
+import com.example.br.edu.ifnmg.tads.diego.notas.R;
+import com.example.br.edu.ifnmg.tads.diego.notas.ResultadoActivity;
+
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
@@ -10,6 +14,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 import br.edu.tads.DataAcess.DisciplinaDAO;
 import br.edu.tads.Model.Disciplina;
+import br.edu.tads.diariodeclasse.R.id;
 
 public class CadastroDisciplina extends Activity {
 
@@ -48,7 +53,27 @@ public class CadastroDisciplina extends Activity {
 		}
 		
 		
+		
 	}
-	
 
+	public void addAluno(View componente){
+		
+		EditText edtNome = (EditText)this.findViewById(R.id.edtNome);
+		EditText edtCargaH = (EditText)this.findViewById(R.id.edtCargaHoraria);
+		
+		
+		
+		
+		Intent intentNovaTela = new Intent(this, AdicionarAluno.class);
+		//intentNovaTela.putExtra("id", dis);
+		intentNovaTela.putExtra("Nome", edtNome.getText().toString() );
+		intentNovaTela.putExtra("CargaH",edtCargaH.getText().toString());
+		
+	
+	
+	}
+
+	
+	
+	
 }

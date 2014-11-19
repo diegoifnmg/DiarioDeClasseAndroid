@@ -56,4 +56,15 @@
         android:onClick="Adicionar"
         android:text="@string/btnAdicionar" />
 
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnAdicionar"
+        android:layout_alignRight="@+id/btnAdicionar"
+        android:layout_below="@+id/btnAdicionar"
+        android:layout_marginTop="26dp"
+        android:text="Add Aluno"
+        android:onClick="addAluno" />
+
 </RelativeLayout>
