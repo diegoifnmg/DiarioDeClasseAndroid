@@ -10,6 +10,7 @@ public class BDUtil extends SQLiteOpenHelper {
 	private static final int VERSAO = 1;
 
 	private static final String TABELA_DISCIPLINA = "Disciplina";
+	private static final String TABELA_AVALIACAO = "Avaliacao";
 	private static final String TABELA_ALUNO = "Aluno";
 
 	// Construtor.........................................................
@@ -37,10 +38,20 @@ public class BDUtil extends SQLiteOpenHelper {
 				+ "carga_horaria INTEGER, "
 				+ "ativo INTEGER "
 				+ ")";
+		
+		String ddlAvaliacao = "CREATE TABLE " + TABELA_AVALIACAO
+				+ "(codigo INTEGER PRIMARY KEY AUTOINCREMENT, "
+				+ "nome TEXT, "
+				+ "ativo INTEGER, "
+				+ "valor_total FLOAT"
+				+ "idDisciplina INTEGER"
+				+ "FOREIGN KEY (idDisciplina) REFERENCES Disciplina(codigo)"
+				+ " )";
 
 		
 		db.execSQL(ddlAluno);
 		db.execSQL(ddlDisciplina);
+		db.execSQL(ddlAvaliacao);
 	}
 
 	@Override

@@ -31,7 +31,7 @@ public class DisciplinaDAO {
 		contentValues.put("ativo", disciplina.getAtivo());
 
 		BDUtil bdUtil = new BDUtil(this.context);
-		bdUtil.getWritableDatabase().insert("DISCIPLINA", null, contentValues);
+		bdUtil.getWritableDatabase().insert(TABELA, null, contentValues);
 		bdUtil.close();
 	}
 

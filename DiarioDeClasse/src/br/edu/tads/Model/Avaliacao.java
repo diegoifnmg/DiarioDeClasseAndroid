@@ -3,15 +3,15 @@ package br.edu.tads.Model;
 public class Avaliacao {
 	
 	private long id;
-	private int valor;
-	private boolean ativo;
+	private float valor;
+	private int ativo;
 	private Disciplina disciplina;
 	private String nome;
 	
-	public int getValor() {
+	public float getValor() {
 		return valor;
 	}
-	public void setValor(int valor) {
+	public void setValor(float valor) {
 	  if (valor>0)
 		this.valor = valor;
 	}
@@ -20,11 +20,11 @@ public class Avaliacao {
 	}
 	public void setId(long id) {
 		this.id = id;
-	}
-	public boolean isAtivo() {
+	}	
+	public int getAtivo() {
 		return ativo;
 	}
-	public void setAtivo(boolean ativo) {
+	public void setAtivo(int ativo) {
 		this.ativo = ativo;
 	}
 	public Disciplina getDisciplina() {
