@@ -24,24 +24,29 @@ public final class R {
         public static final int ic_launcher=0x7f020000;
     }
     public static final class id {
-        public static final int action_settings=0x7f080008;
-        public static final int btnAdicionar=0x7f080004;
-        public static final int btnCadastroAluno=0x7f080006;
-        public static final int btnCadastroDisciplina=0x7f080007;
-        public static final int edtCargaHoraria=0x7f080003;
-        public static final int edtNome=0x7f080001;
-        public static final int lstDisciplinas=0x7f080005;
-        public static final int txtCargaHoraria=0x7f080002;
-        public static final int txtNome=0x7f080000;
+        public static final int action_settings=0x7f08000d;
+        public static final int btnAdicionar=0x7f08000a;
+        public static final int btnCadastroAluno=0x7f08000b;
+        public static final int btnCadastroDisciplina=0x7f08000c;
+        public static final int button1=0x7f080004;
+        public static final int edtCargaHoraria=0x7f080009;
+        public static final int edtEmailAluno=0x7f080003;
+        public static final int edtNome=0x7f080007;
+        public static final int edtNomeAluno=0x7f080001;
+        public static final int expandableListView1=0x7f080005;
+        public static final int lblEmailAluno=0x7f080002;
+        public static final int lblNomeAluno=0x7f080000;
+        public static final int txtCargaHoraria=0x7f080008;
+        public static final int txtNome=0x7f080006;
     }
     public static final class layout {
-        public static final int activity_cadastro_disciplina=0x7f030000;
-        public static final int activity_listagem_disciplina=0x7f030001;
+        public static final int activity_adicionar_aluno=0x7f030000;
+        public static final int activity_cadastro_disciplina=0x7f030001;
         public static final int activity_main=0x7f030002;
     }
     public static final class menu {
-        public static final int cadastro_disciplina=0x7f070000;
-        public static final int listagem_disciplina=0x7f070001;
+        public static final int adicionar_aluno=0x7f070000;
+        public static final int cadastro_disciplina=0x7f070001;
         public static final int main=0x7f070002;
     }
     public static final class string {
