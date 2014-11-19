@@ -16,7 +16,6 @@ public class BDUtil extends SQLiteOpenHelper {
 	public BDUtil(Context context) {
 		super(context, NOME_BD, null, VERSAO);
 		// TODO Auto-generated constructor stub
-
 	}
 
 	// onCreate...........................................................
@@ -27,7 +26,10 @@ public class BDUtil extends SQLiteOpenHelper {
 				+ "(codigo INTEGER PRIMARY KEY AUTOINCREMENT, "
 				+ "nome TEXT, "
 				+ "email TEXT, "
-				+ "ativo INTEGER )";
+				+ "ativo INTEGER, "
+				+ "idDisciplina INTEGER"
+				+ "FOREIGN KEY (idDisciplina) REFERENCES Disciplina(codigo)"
+				+ " )";
 		
 		String ddlDisciplina = "CREATE TABLE " + TABELA_DISCIPLINA
 				+ "(codigo INTEGER PRIMARY KEY AUTOINCREMENT, "
@@ -39,7 +41,6 @@ public class BDUtil extends SQLiteOpenHelper {
 		
 		db.execSQL(ddlAluno);
 		db.execSQL(ddlDisciplina);
-
 	}
 
 	@Override

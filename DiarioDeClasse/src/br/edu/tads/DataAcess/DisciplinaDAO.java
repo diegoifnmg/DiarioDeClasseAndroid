@@ -8,6 +8,7 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.SQLException;
 import android.util.Log;
+import br.edu.tads.Model.Aluno;
 import br.edu.tads.Model.Disciplina;
 
 public class DisciplinaDAO {
@@ -31,24 +32,35 @@ public class DisciplinaDAO {
 
 		BDUtil bdUtil = new BDUtil(this.context);
 		bdUtil.getWritableDatabase().insert("DISCIPLINA", null, contentValues);
+		bdUtil.close();
 	}
 
-	// Método Apagar............................................................
+	// Método Apagar....................................................................
 	public void deletar(Disciplina disciplina) {
 		String[] args = { disciplina.getId().toString() };
 
+		AlunoDAO alunoDAO = new AlunoDAO(this.context);
+		List<Aluno> alunos = new ArrayList<Aluno>();
+		
+		alunos = alunoDAO.listarAlunosDisciplina(disciplina.getId());		
+		
+		if(!alunos.isEmpty()){
+			for(Aluno a : alunos){
+				alunoDAO.deletar(a);
+			}
+		}
+		
 		// Exclusão da Disciplina
 		BDUtil bdUtil = new BDUtil(context);
 		bdUtil.getWritableDatabase().delete(TABELA, "id=?", args);
+		bdUtil.close();
 	}
 
-	// Listar todos os alunos...................................................
+	// Listar todos os alunos...........................................................
 	public List<Disciplina> listar() {
 
 		// Definição da Coleção de Disciplinas
 		List<Disciplina> lista = new ArrayList<Disciplina>();
-		
-		AlunoDAO alunoDAO = new AlunoDAO(this.context);
 
 		// Definição da Instrução SQL
 		String sql = "Select * from Disciplina";
@@ -73,6 +85,7 @@ public class DisciplinaDAO {
 			Log.e(TAG, e.getMessage());
 		} finally {
 			cursor.close();
+			bdUtil.close();
 		}
 		return lista;
 	}

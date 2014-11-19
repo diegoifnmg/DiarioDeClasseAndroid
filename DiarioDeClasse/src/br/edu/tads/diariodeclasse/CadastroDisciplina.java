@@ -38,7 +38,7 @@ public class CadastroDisciplina extends Activity {
 		disciplina.setCargaHoraria(Integer.parseInt(edtCargaHoraria.getText().toString()));
 		
 		if (disciplina.getNome() != null) {
-			dDAO.Inserir(disciplina);
+			dDAO.inserir(disciplina);
 
 			// Mostra a mensagem de confirmação do cadastro
 			Toast.makeText(CadastroDisciplina.this,
