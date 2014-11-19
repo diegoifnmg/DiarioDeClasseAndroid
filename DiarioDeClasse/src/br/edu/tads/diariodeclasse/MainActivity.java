@@ -7,6 +7,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.view.Menu;
 import android.view.View;
+import android.widget.Button;
 
 public class MainActivity extends Activity {
 
@@ -30,6 +31,9 @@ public class MainActivity extends Activity {
     	
     	MainActivity.this.startActivity(intentNovaTela);
     	
+    	Button bt = (Button) findViewById(R.id.btnCadastroAluno);
+    	
+   	
     }
     
 public void Alunos(View componente){

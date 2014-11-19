@@ -39,7 +39,7 @@ public class AdicionarAluno extends Activity {
 				" Cadastrado com Sucesso",Toast.LENGTH_LONG).show();
 		
 		
-		Intent intentNovaTela = new Intent(AdicionarAluno.this, MainActivity.class);
+		
     	
     	AdicionarAluno.this.startActivity(intentNovaTela);
 		

@@ -2,9 +2,6 @@ package br.edu.tads.diariodeclasse;
 
 
 
-import com.example.br.edu.ifnmg.tads.diego.notas.R;
-import com.example.br.edu.ifnmg.tads.diego.notas.ResultadoActivity;
-
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -14,7 +11,6 @@ import android.widget.EditText;
 import android.widget.Toast;
 import br.edu.tads.DataAcess.DisciplinaDAO;
 import br.edu.tads.Model.Disciplina;
-import br.edu.tads.diariodeclasse.R.id;
 
 public class CadastroDisciplina extends Activity {
 
