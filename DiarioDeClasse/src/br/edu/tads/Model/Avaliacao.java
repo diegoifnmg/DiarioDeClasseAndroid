@@ -40,10 +40,5 @@ public class Avaliacao {
 		this.nome = nome;
 	}
 	
-	
-	
-	
-	
-	
 
 }

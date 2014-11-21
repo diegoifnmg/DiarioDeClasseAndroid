@@ -9,5 +9,9 @@
     <string name="btnAdicionar">Adicionar</string>
     <string name="title_activity_listagem_disciplina">Listagem de Disciplinas</string>
     <string name="title_activity_adicionar_aluno">AdicionarAluno</string>
+    <string name="title_activity_cadastro__avaliacao">Cadastro Avaliação</string>
+    <string name="txtNomeAvaliacao">Digite o Nome da Avaliação : </string>
+    <string name="txtValor">Digite o Valor :</string>
+    <string name="btnSalvarAvalicao">Salvar</string>
 
 </resources>

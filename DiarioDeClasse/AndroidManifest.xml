@@ -29,10 +29,14 @@
         <activity
             android:name="br.edu.tads.diariodeclasse.ListagemDisciplina"
             android:label="@string/title_activity_listagem_disciplina" >
-        </activity>   
-		<activity
+        </activity>
+        <activity
             android:name="br.edu.tads.diariodeclasse.AdicionarAluno"
             android:label="@string/title_activity_adicionar_aluno" >
+        </activity>
+        <activity
+            android:name="br.edu.tads.diariodeclasse.Cadastro_Avaliacao"
+            android:label="@string/title_activity_cadastro__avaliacao" >
         </activity>
     </application>
 
