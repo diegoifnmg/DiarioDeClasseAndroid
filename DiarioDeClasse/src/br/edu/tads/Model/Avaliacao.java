@@ -2,7 +2,7 @@ package br.edu.tads.Model;
 
 public class Avaliacao {
 	
-	private long id;
+	private Long id;
 	private float valor;
 	private int ativo;
 	private Disciplina disciplina;
@@ -15,7 +15,7 @@ public class Avaliacao {
 	  if (valor>0)
 		this.valor = valor;
 	}
-	public long getId() {
+	public Long getId() {
 		return id;
 	}
 	public void setId(long id) {
@@ -40,5 +40,14 @@ public class Avaliacao {
 		this.nome = nome;
 	}
 	
+<<<<<<< HEAD
+=======
+	public String toString() {
+		return "Nome: " + this.nome;
+	}
+	
+	
+		
+>>>>>>> ac8e49ace8404df3a9981cbae98fd76a08d5433b
 
 }
